@@ -23,17 +23,21 @@ Note: all actions expected to be executed in repo folder.
 
 - Create virtual environment and activate it (eg. `python -m venv venv && source ./venv/bin/activate` or `conda create -n venv python=3.11 && conda activate venv`)
 - Install required packages `pip install -r requirements.txt`
-- Run `baseline_model_nyc_taxi_data.ipynb` for downloading datasets, training model and creating reference dataset 
 
 - I am using this for my environment 
 ```
 `conda create -n py11 python=3.11 && conda activate py11`
 ```
+- Run `baseline_model_nyc_taxi_data.ipynb` for downloading datasets, training model and creating reference dataset 
+```
+jupyter notebook
+```
+And open  `http://127.0.0.1:8888` and run all the blocks in `baseline_model_nyc_taxi_data.ipynb` file.
 
 
 ### Starting services
 
-To start all required services, execute:
+To start all required services, go to new terminal and execute:
 ```bash
 docker-compose up
 ```
@@ -55,7 +59,7 @@ And run this in new terminal
 prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api
 ```
 
-Check out the dashboard at http://127.0.0.1:4200
+Check out the dashboard at `http://127.0.0.1:4200`
 
 
 ### Sending data
