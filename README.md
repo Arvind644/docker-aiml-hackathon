@@ -32,7 +32,7 @@ Note: all actions expected to be executed in repo folder.
 ```
 jupyter notebook
 ```
-And open  `http://127.0.0.1:8888` and run all the blocks in `baseline_model_nyc_taxi_data.ipynb` file.
+And open  `http://localhost:8888/tree?token=beb2fbe1b95bf92927c0a58e591e132b74a782932a322fe6` like this which you will find in your terminal and run all the blocks in `baseline_model_nyc_taxi_data.ipynb` file.
 
 
 ### Starting services
